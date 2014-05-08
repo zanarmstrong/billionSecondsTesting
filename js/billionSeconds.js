@@ -21,9 +21,9 @@ function tick() {
 		"You were born on " +
 		formatTime(myBirthday.getBirthdateFormatted()) +
 		" so your Billion second birthday will be " +
-		formatTime(myBirthday.getNextBillion().nextBillionDate) + 
-		". You're currently " + 
-		d3.format(",")(myBirthday.ageInSeconds()) + 
+		formatTime(myBirthday.getNextBillion().nextBillionDate) +
+		". You're currently " +
+		d3.format(",")(myBirthday.ageInSeconds()) +
 		" billion seconds old.");
 	setTimeout(tick, 1000 - billionsecondsago % 1000);
 };
